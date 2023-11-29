@@ -1,0 +1,159 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.inner-header{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo-container {
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+}
+
+.navigatie{
+    float: right;
+    height: 100%;
+}
+
+.navigatie li{
+    display: inline-block;
+}
+
+.navigatie li a{
+    color: white;
+    padding: 10px 15px;
+}
+
+.navigatie a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigatie a:last-child{
+    padding-right: 0%;
+}
+
+.navigatie a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+}
+
+
+.container{
+    width: calc(100%-120px); /* vanwege padding*/
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 60px;
+    clear: both;
+}
+
+.showcase{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(fotos/Desktop_hero_Ariana_1440x680.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.muziek .showcase{
+    background-image: url(fotos/maxresdefault.png);
+}
+
+main{
+    display: block;
+    overflow: auto;
+}
+
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    font-size: 12vh;
+    color: white;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+button{
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #000000;
+  }
+
+  h2{
+    color: bisque;
+  }
+
+  .eenderde{
+    width: 33.33333%;
+    float: left;
+  }
+
+  .tweederde{
+    width: 66.66666%;
+    float: left;
+  }
+
+  .inner{
+    padding: 20px;
+  }
+
+  footer{
+    background-color: bisque;
+    overflow: auto;
+  }
+
+
+  @media only screen and (max-width: 768px){
+    .eenderde, .tweederde{
+        width: 100%;
+    }
+}
